@@ -1,6 +1,6 @@
+import { Component } from '../components';
 import map from 'lodash/map';
 import React, { ReactElement } from 'react';
-import { Component } from '../components';
 import type { ComponentType } from '@farfetch/blackout-client/contents/types';
 
 /**
@@ -9,14 +9,20 @@ import type { ComponentType } from '@farfetch/blackout-client/contents/types';
  *
  * @param {object} data - Data to render.
  * @param {Components[]} data.components - Collection of components to render.
+ * @param {object} location - - Router location object.
  *
  * @returns {ReactElement[]} Rendered components.
  */
-const renderContent = ({
-  components
-}:{ components: ComponentType[] }): ReactElement[] =>
+const renderContent = (
+  {
+    components,
+  }: {
+    components: ComponentType[];
+  },
+  location: Record<string, string>,
+): ReactElement[] =>
   map(components, (component, key) => (
-    <Component component={component} key={key} />
+    <Component component={component} key={key} location={location} />
   ));
 
 export default renderContent;
