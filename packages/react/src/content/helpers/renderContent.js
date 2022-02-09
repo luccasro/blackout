@@ -11,10 +11,11 @@ import React from 'react';
  *
  * @param {object} data - Data to render.
  * @param {Array}  data.components - Collection of components to render.
+ * @param {object} location - Router location object.
  *
  * @returns {object} Rendered components.
  */
-export default ({ components }) =>
+export default ({ components }, location) =>
   map(components, (component, key) => (
-    <Component component={component} key={key} />
+    <Component component={component} key={key} location={location} />
   ));
