@@ -109,5 +109,5 @@ jobs:
             else
               PRE_ID=rc
             fi
-            npx lerna publish --conventional-commits --conventional-prerelease --no-verify-access --preid ${PRE_ID} --pre-dist-tag ${PRE_ID}  --message "${PUBLISH_COMMIT_MESSAGE}"  --yes
+            npx lerna publish --conventional-commits --conventional-prerelease --no-verify-access --preid ${PRE_ID} --pre-dist-tag ${PRE_ID}  --message "${PUBLISH_COMMIT_MESSAGE}"  --yes --contents dist
           fi

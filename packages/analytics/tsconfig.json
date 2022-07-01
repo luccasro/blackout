@@ -1,9 +1,8 @@
 {
-  "extends": "../../configs/typescript/tsconfig.package-build.json",
-  "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "dist",
-    "composite": true
-  },
-  "include": ["**/*.ts"]
+  "extends": "../../tsconfig.json",
+  "references": [
+    { "path": "../client" },
+    { "path": "./tsconfig.release.json" },
+    { "path": "./tsconfig.tests.json" }
+  ]
 }

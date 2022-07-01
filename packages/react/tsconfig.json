@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "references": [
+    { "path": "../analytics" },
+    { "path": "../client" },
+    { "path": "../redux" },
+    { "path": "./tsconfig.release.json" },
+    { "path": "./tsconfig.tests.json" }
+  ]
+}

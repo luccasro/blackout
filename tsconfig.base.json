@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "lib": ["esnext", "dom"],
+    "target": "ES2015",
+
+    /* Modules */
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "typeRoots": ["node_modules/@types", "types"],
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "isolatedModules": true,
+
+    /* Projects */
+    "composite": true,
+
+    /* Emit */
+    "declarationMap": true,
+    "importHelpers": true,
+    "importsNotUsedAsValues": "error",
+    "sourceMap": true,
+    "stripInternal": true,
+    "emitDeclarationOnly": true,
+
+    /* Completeness */
+    "skipLibCheck": true,
+
+    /* Type checking */
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "strict": true
+  }
+}
