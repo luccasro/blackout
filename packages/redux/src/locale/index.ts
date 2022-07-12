@@ -1,18 +1,18 @@
-import * as actionTypesLocale from './actionTypes';
-import * as middlewaresLocale from './middlewares';
-import reducerLocale, {
+import * as localeActionTypes from './actionTypes';
+import * as localeMiddlewares from './middlewares';
+import localeReducer, {
   entitiesMapper as localeEntitiesMapper,
 } from './reducer';
-import serverInitialStateLocale from './serverInitialState';
+import localeServerInitialState from './serverInitialState';
 
 export * from './actions';
 export * from './actions/factories';
 export * from './selectors';
 
 export {
-  actionTypesLocale,
-  middlewaresLocale,
-  serverInitialStateLocale,
-  reducerLocale,
+  localeActionTypes,
   localeEntitiesMapper,
+  localeMiddlewares,
+  localeServerInitialState,
+  localeReducer,
 };

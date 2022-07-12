@@ -1,8 +1,8 @@
 import * as fromReducer from '../reducer';
 import {
-  actionTypesLocale as actionTypes,
+  localeActionTypes as actionTypes,
   localeEntitiesMapper,
-  reducerLocale as reducer,
+  localeReducer as reducer,
 } from '..';
 import { mockCountryCode } from 'tests/__fixtures__/locale';
 import type { State } from '../types';

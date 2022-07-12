@@ -4,6 +4,7 @@ import type { StateWithoutResult } from '../../types';
 
 export type State = CombinedState<{
   countryCode: string | null;
+  sourceCountryCode: string | null;
   cities: {
     error: BlackoutError | null;
     isLoading: boolean;
