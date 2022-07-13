@@ -88,3 +88,30 @@ export const mockModel = {
   newsletterSubscriptionOptionDefault: false,
   requestSourceCountryCode: 'PT',
 };
+
+export const mockInitialState = {
+  locale: {
+    countryCode: 'US',
+    cities: {
+      error: null,
+      isLoading: false,
+    },
+    countries: {
+      error: null,
+      isLoading: false,
+    },
+    currencies: {
+      error: null,
+      isLoading: false,
+    },
+    states: {
+      error: null,
+      isLoading: false,
+    },
+  },
+  entities: {
+    countries: mockCountriesEntities,
+    states: mockStatesEntities,
+    cities: mockCitiesEntities,
+  },
+};
