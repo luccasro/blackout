@@ -8,3 +8,5 @@ export { default as useProductSizeGuides } from './useProductSizeGuides';
 export { default as useProductAttributes } from './useProductAttributes';
 export { default as useProductGrouping } from './useProductGrouping';
 export { default as useProductGroupingProperties } from './useProductGroupingProperties';
+
+export * from './types';

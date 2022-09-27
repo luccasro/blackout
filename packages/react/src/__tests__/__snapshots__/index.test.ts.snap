@@ -2,6 +2,10 @@
 
 exports[`root index file should export all public modules 1`] = `
 Object {
+  "ProductListingTypes": Object {
+    "Listing": "Listing",
+    "Set": "Set",
+  },
   "analytics": AnalyticsWeb {
     "activeIntegrations": Map {},
     "consentInstance": null,
@@ -121,6 +125,7 @@ Object {
     "TAP": "Tap",
     "TOUCH": "Touch",
   },
+  "isSet": [Function],
   "loginMethodParameterTypes": Object {
     "APPLE": "Apple",
     "FACEBOOK": "Facebook",
@@ -183,8 +188,11 @@ Object {
   "useCountryAddressSchemas": [Function],
   "useCountryStateCities": [Function],
   "useCountryStates": [Function],
+  "useCreateReturn": [Function],
   "useLocale": [Function],
   "useOrder": [Function],
+  "useOrderReturnOptions": [Function],
+  "useOrderReturns": [Function],
   "useOrders": [Function],
   "usePaymentTokens": [Function],
   "usePrevious": [Function],
@@ -194,6 +202,8 @@ Object {
   "useProductGroupingProperties": [Function],
   "useProductListing": [Function],
   "useProductSizeGuides": [Function],
+  "useReturn": [Function],
+  "useReturnPickupCapability": [Function],
   "useSearchDidYouMean": [Function],
   "useSearchIntents": [Function],
   "useSearchSuggestions": [Function],
